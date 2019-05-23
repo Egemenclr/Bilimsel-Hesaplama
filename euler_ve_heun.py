@@ -30,3 +30,15 @@ for i in range(4,iterasyon):
     sonuc3+=((f(i,sonuc3)+f(i+1,t))*h)/2
 sonuc3
 
+def f(x,y):
+    return -y/x
+ 
+h=float(input("h:"))
+y4=3/4
+t=y4
+sonuc=y4
+iterasyon=int(input("iterasyon"))
+	for i in range(4,iterasyon):
+		t+=f(i,t)*h/2
+		sonuc+=f(i+1/2,t)*h
+sonuc
